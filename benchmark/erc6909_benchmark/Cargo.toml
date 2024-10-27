@@ -1,0 +1,16 @@
+[package]
+name = "erc6909_benchmark"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alloy-primitives = "0.3.1"
+alloy-sol-types = "0.3.1"
+stylus-sdk = "0.4.2"
+rustmate = { path = "../../" }
+
+[features]
+export-abi = ["stylus-sdk/export-abi"]
+
+[lib]
+crate-type = ["lib", "cdylib"]
